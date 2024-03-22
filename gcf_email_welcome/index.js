@@ -24,10 +24,11 @@ exports.sendWelcome = (message, context) => {
   };
 
   // SEND THE MESSAGE THROUGH SENDGRID
-  sgMail
-  .send(msg)
-  .then(() => {}, error => {
-    console.error(error);
+  sgMail.send(msg)
+  .then(() => {
+    console.log('Email sent successfully');
+  })
+  .catch(error => {
+    console.error('Error sending email:', error.toString());
   });
-
-}
+};
