@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@google-cloud/firestore": "^7.5.0",
+    "@sendgrid/mail": "^8.1.2",
+    "dotenv": "^16.4.5"
+  }
+}
